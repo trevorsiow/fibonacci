@@ -1,3 +1,4 @@
+import time
 def fibonacci(x):
     #solve fibonacci using for loop
     currentValue = 1
@@ -10,6 +11,13 @@ def fibonacci(x):
     return currentValue
 
 if __name__ == "__main__":
-    for i in range(1000):
-        print fibonacci(i)
-        
+    startTime = time.time()
+
+    
+    fibonacci(1000000)
+    
+    endTime = time.time()
+    
+    elapsedTime = endTime - startTime
+    print elapsedTime
+
