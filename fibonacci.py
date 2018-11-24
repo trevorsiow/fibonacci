@@ -14,7 +14,7 @@ if __name__ == "__main__":
     startTime = time.time()
 
     
-    fibonacci(1000000)
+    print fibonacci(1000)
     
     endTime = time.time()
     
