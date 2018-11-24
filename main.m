@@ -1,4 +1,4 @@
 clear all
 tic
-fibValue = fibonacci(10000)
+fibValue = fibonacciRecursive(35)
 toc

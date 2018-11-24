@@ -10,11 +10,19 @@ def fibonacci(x):
         previousValue = temp
     return currentValue
 
+def fibonacciRecursive(x):
+    if x == 1 or x == 0:
+        return 1
+    return fibonacciRecursive(x - 1) + fibonacciRecursive(x - 2)
+
 if __name__ == "__main__":
+    
+    
+    
     startTime = time.time()
 
     
-    print fibonacci(1000)
+    print fibonacciRecursive(35)
     
     endTime = time.time()
     
