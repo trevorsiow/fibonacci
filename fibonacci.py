@@ -1,6 +1,5 @@
 import time
 def fibonacci(x):
-    #solve fibonacci using for loop
     currentValue = 1
     previousValue = 0
 
@@ -18,14 +17,11 @@ def fibonacciRecursive(x):
 if __name__ == "__main__":
     
     
-    
-    startTime = time.time()
-
-    
-    print fibonacciRecursive(35)
-    
-    endTime = time.time()
-    
-    elapsedTime = endTime - startTime
-    print elapsedTime
+    for i in range(5, 50, 5):
+        startTime = time.time()
+        fibonacciRecursive(i)
+        endTime = time.time()
+        elapsedTime = endTime - startTime
+        print "Fibonacci number %d" % i
+        print "elapsed time is %f\n" % elapsedTime
 
